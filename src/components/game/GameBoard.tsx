@@ -89,7 +89,11 @@ const GameBoard = () => {
   return (
     <div 
       ref={boardRef}
-      className="relative h-screen w-full bg-gray-900 flex flex-col items-center justify-center overflow-hidden"
+      className="relative h-screen w-full overflow-hidden"
+      style={{
+        background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
+        boxShadow: 'inset 0 0 100px rgba(0,0,0,0.5)'
+      }}
     >
       <ScoreDisplay score={score} />
       
